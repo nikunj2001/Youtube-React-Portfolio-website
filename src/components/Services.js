@@ -18,7 +18,7 @@ const Services = () => {
   const [state] = React.useState([
     {
       id: 1,
-      icon: <FaGithub className="commonIcons" />,
+     icon:FaGithub,
       heading: "Web Development",
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
@@ -26,7 +26,7 @@ const Services = () => {
     },
     {
       id: 2,
-      icon: <FaCamera className="commonIcons" />,
+      icon:FaCamera ,
       heading: "Photography",
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
@@ -34,7 +34,7 @@ const Services = () => {
     },
     {
       id: 3,
-      icon: <FaCircleNotch className="commonIcons" />,
+      icon: FaCircleNotch,
       heading: "Web Desing",
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
@@ -42,7 +42,7 @@ const Services = () => {
     },
     {
       id: 4,
-      icon: <FaApple className="commonIcons" />,
+      icon: FaApple,
       heading: "App Devlopment",
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
@@ -50,7 +50,7 @@ const Services = () => {
     },
     {
       id: 5,
-      icon: <FaFileVideo className="commonIcons" />,
+      icon: FaFileVideo,
       heading: "Video Editing",
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
@@ -58,7 +58,7 @@ const Services = () => {
     },
     {
       id: 6,
-      icon: <FaSearchDollar className="commonIcons" />,
+      icon: FaSearchDollar ,
       heading: "SEO Expert",
       text:
         "Lorem Ipsum is simply dummy text of the printing typesetting\
@@ -80,7 +80,7 @@ const Services = () => {
             {state.map((info) => (
               <div className="col-4 bgMain">
                 <div className="services__box">
-                  {info.icon}
+                  {<info.icon className='commonIcons' />}
                   <div className="services__box-header">{info.heading}</div>
                   <div className="services__box-p">{info.text}</div>
                 </div>
